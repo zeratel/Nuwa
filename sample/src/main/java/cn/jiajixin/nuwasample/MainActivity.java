@@ -44,4 +44,9 @@ public class MainActivity extends AppCompatActivity {
         main_rl.addView(textView3,params2);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        this.finish();
+    }
 }
