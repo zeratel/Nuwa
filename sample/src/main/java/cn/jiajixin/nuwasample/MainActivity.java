@@ -15,6 +15,8 @@ import cn.jiajixin.nuwasample.Hello.Hello;
 
 public class MainActivity extends AppCompatActivity {
 
+    static String a = "哈哈哈";
+
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView2 = new TextView(this);
         textView2.setText("喵~");
+        textView2.setText(a);
         //!!!
         textView2.setId(View.generateViewId());
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
